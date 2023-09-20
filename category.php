@@ -71,12 +71,9 @@ get_header();
 </section>
 
 <?php
-// get_sidebar();
 
 //Pagination
-next_posts_link('Äldre inlägg');
 
-global $wp_query;
 
 $total_pages = $wp_query->max_num_pages;
 $current_page = max(1, get_query_var('paged'));
@@ -88,7 +85,6 @@ echo paginate_links(array(
     'total' => $total_pages,
 ));
 
-previous_posts_link('Nyare inlägg');
 
 wp_reset_postdata();
 

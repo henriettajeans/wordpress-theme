@@ -2,6 +2,7 @@
 // wp_nav_menu();
 get_header();
 
+global $wp_query;
 ?>
 <div class="frontpage-img">
 

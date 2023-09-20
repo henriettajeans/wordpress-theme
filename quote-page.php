@@ -4,6 +4,7 @@ Template Name: Citat-sida
 */ ?>
 <?php
 get_header();
+
 ?>
 
 
