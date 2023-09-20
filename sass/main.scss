@@ -2,7 +2,7 @@
 @import "post.scss";
 
 body{
-    background-color: rgb(245, 239, 236);
+    background-color: rgb(236, 242, 245);
     height: 100%;
     width: 100vw;
     margin: 0;
@@ -28,7 +28,7 @@ body{
     margin:2em;
     padding: 2em;
     border: solid $dustypink;
-    border-color: $pink;
+    border-radius: 1em;
 }
 main{
     height: 100%;
@@ -57,5 +57,17 @@ a{
     &__sidebar ul{
         flex-direction: column;
 
+    }
+}
+.home-container{
+    position: relative;
+    text-align: center;
+    color: white;
+
+    &__text{
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     }
 }

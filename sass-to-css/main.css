@@ -54,7 +54,7 @@
 }
 
 body {
-  background-color: rgb(245, 239, 236);
+  background-color: rgb(236, 242, 245);
   height: 100%;
   width: 100vw;
   margin: 0;
@@ -78,7 +78,7 @@ body .sidebar {
   margin: 2em;
   padding: 2em;
   border: solid rgb(232, 222, 231);
-  border-color: rgb(248, 222, 222);
+  border-radius: 1em;
 }
 
 main {
@@ -110,4 +110,16 @@ a {
 }
 .custom-wrapper__sidebar ul {
   flex-direction: column;
+}
+
+.home-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.home-container__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
