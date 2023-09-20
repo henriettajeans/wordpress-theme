@@ -10,21 +10,24 @@ get_header();
 <section class="custom-wrapper">
     <section class="container ">
         <h1><?php the_title(); ?></h1>
-        <?php
 
-        if (have_posts()) : while (have_posts()) : the_post();
+        <section section="container">
 
-        ?>
-                <section section="container__content">
+            <?php if (have_rows('quotes')) : ?>
 
-                    <?php the_content(); ?>
-                </section>
+                <?php while (have_rows('quote')) : the_row(); ?>
+                    <p>
+                        <?php the_sub_field('quote'); ?>
+                    </p>
+                    <p>
+                        <?php the_sub_field('author') ?>
+                    </p>
+            <?php
 
-        <?php
-
-            endwhile;
-        endif;
-        ?>
+                endwhile;
+            endif;
+            ?>
+        </section>
     </section>
     <div class="custom-wrapper__sidebar container">
         <?php
