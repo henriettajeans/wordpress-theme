@@ -1,0 +1,109 @@
+/* 
+Theme Name: ACF inlämning
+Author: Henrietta
+Author URI: https://wordpress.org/
+Description: Henriettas tema is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+License: Henrietta
+Version: 1.0
+ */
+
+
+ body {
+    background-color: #f4dddd;
+    /* font-family: 'Consolas'; */
+    color: rgb(151, 93, 155);
+    
+}
+#content {
+  width: 80%;
+}
+/* #img-container img{
+  height: 200px;
+  width:80%;
+} */
+.sidebar-container{
+  border-color: aqua;
+  margin: 5px;
+  padding: 5px;
+}
+.frontpage-img{
+  padding: 5%;
+  width: 500px;
+  height: 200px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-navbar-container{
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+
+}
+.menu{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: none;
+  height: 100%;
+}
+.bar-wrapper{
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+align-items: center;
+}
+.bar-wrapper_search{
+  justify-content: flex-end;
+}
+
+.header-wrapper{
+  background: pink;
+}
+.main-wrapper{
+  background-color: rgb(244, 229, 248);
+}
+
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container{
+  display: flex; 
+  justify-content: center;
+}
+.margin-container{
+  height: 3.5rem;
+  /* background-color: rgb(236, 214, 236); */
+}
+.post-container_desc{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-wrapper{
+  background-color: rgb(250, 231, 215);
+
+}
+.footer-wrapper_container{
+  display: flex;
+  gap: 5%;
+}
+.footer-wrapper_box{
+  width: 30%;
+  padding-left: 1em;
+}
+.footer-wrapper_container_sign{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}

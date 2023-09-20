@@ -1,0 +1,61 @@
+@import "header.scss";
+@import "post.scss";
+
+body{
+    background-color: rgb(245, 239, 236);
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 3%;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+    }
+   
+}
+.main-wrapper{
+    max-width: 100%;
+    height: 100%;
+    // display: flex;
+    margin-top: 2em;
+    margin:2em;
+    padding: 2em;
+    border: solid $dustypink;
+    border-color: $pink;
+}
+main{
+    height: 100%;
+    margin: 0;
+}
+input, textarea{
+    border: solid $dustypink;
+    border-radius: 10px;
+    background-color: $lightpink;
+}
+li {
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: none;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: pink;
+    text-shadow: 1px 1px 4px rgb(244, 238, 244);
+}
+
+.custom-wrapper{
+    display: flex;
+
+    &__sidebar ul{
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,521 @@
+/* General styles
+------------------------------------------------------------------ */
+
+* {
+	outline: none;
+}
+
+body {
+	background-color: #eee;
+}
+
+a {
+	color: crimson;
+}
+
+	a:hover, a:active {
+		color: darkred;
+	}
+
+h1, h2, h3, h4 {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: 30px;
+}
+
+img {
+	max-width: 100%;
+}
+
+label {
+	display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+	display: block;
+	min-width: 200px;
+}
+
+input[type="submit"] {
+	display: block;
+}
+
+textarea {
+	min-width: 200px;
+}
+
+/* Header styles
+------------------------------------------------------------------ */
+
+#header {
+	background-color: crimson;
+	height: 70px;
+}
+
+	#header .logo {
+		color: white;
+		font-size: 24px;
+		line-height: 70px;
+	}
+
+	#header .mobile-menu-wrap {
+		color: white;
+		font-size: 20px;
+		line-height: 40px;
+	}
+
+		#header .mobile-menu-wrap .menu-icon {
+			min-width: 25px;
+		}
+
+	#header form {
+		float: right;
+		padding: 20px 0;
+	}
+
+		#header form label {
+			display: none;
+		}
+
+		#header form input {
+			border: none;
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 10px;
+		}
+
+			#header form input[type="text"] {
+			}
+
+			#header form input[type="submit"] {
+				background-color: #333;
+				color: white;
+				margin-left: 10px;
+			}
+
+@media ( max-width: 768px ) {
+
+#header {
+	height: 40px;
+}
+
+	#header .logo {
+		font-size: 20px;
+		line-height: 40px;
+	}
+
+}
+
+#nav {
+	background-color: #333;
+	height: 40px;
+}
+
+	#nav .menu {
+		margin: 0;
+		padding: 0;
+	}
+
+		#nav .menu > li {
+			float: left;
+			line-height: 40px;
+			list-style: none;
+			margin-right: 10px;
+			padding: 0 15px;
+		}
+
+			#nav .menu > li.current-menu-item {
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+
+			#nav .menu > li > a {
+				color: white;
+			}
+
+@media ( max-width: 768px ) {
+
+#nav {
+	display: none;
+	height: auto;
+}
+
+	#nav .menu {
+		margin: 0 -15px;
+	}
+
+		#nav .menu > li {
+			float: none;
+			width: 100%;
+		}
+
+}
+
+.mobile-search {
+	background-color: #333;
+	display: none;
+	height: 50px;
+	padding: 10px 15px;
+}
+
+	.mobile-search form {
+		overflow: hidden;
+	}
+
+		.mobile-search form label {
+			display: none;
+		}
+
+		.mobile-search form input {
+			border: none;
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 5px;
+		}
+
+			.mobile-search form input[type="text"] {
+				margin-right: 10px;
+				width: calc(80% - 10px);
+			}
+
+			.mobile-search form input[type="submit"] {
+				background-color: crimson;
+				color: white;
+				width: 20%;
+			}
+
+/* Main styles
+------------------------------------------------------------------ */
+
+main {
+	padding: 40px 0;
+}
+
+.hero {
+	position: relative;
+}
+
+	.hero .text {
+		color: white;
+		font-size: 22px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+		top: 50%;
+		transform: translateY(-50%);
+		width: 66.66666667%;
+	}
+
+		.hero .text h1 {
+			font-size: 50px;
+		}
+
+@media ( max-width: 768px ) {
+
+.hero .text {
+	color: inherit;
+	font-size: 16px;
+	margin-top: 30px;
+	position: static;
+	text-shadow: none;
+	top: auto;
+	transform: none;
+	width: 100%;
+}
+
+	.hero .text h1 {
+		font-size: 30px;
+	}
+
+}
+
+.welcome-text {
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+article {
+	background-color: white;
+	border: solid 1px #ccc;
+	border-top: solid 2px #333;
+	padding: 30px;
+	position: relative;
+}
+
+	article + article {
+		margin-top: 30px;
+	}
+
+	article img {
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+		margin-bottom: 30px;
+	}
+
+	article .title {
+		margin-bottom: 10px;
+	}
+
+	article .meta {
+		margin: 0 0 10px;
+		overflow: hidden;
+		padding: 0;
+	}
+
+		article .meta > li {
+			float: left;
+			list-style: none;
+			margin-right: 15px;
+		}
+
+			article .meta > li > .fa {
+				margin-right: 5px;
+			}
+
+	article .categories {
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+
+		article .categories > li {
+			float: left;
+			list-style: none;
+			margin-right: 15px;
+		}
+
+			article .categories > li > a {
+				background-color: crimson;
+				border-radius: 3px;
+				color: white;
+				display: block;
+				font-size: 12px;
+				padding: 5px 10px;
+			}
+
+@media ( max-width: 768px ) {
+
+article .meta {
+	margin: 25px 0;
+}
+
+	article .meta > li {
+		float: none;
+		margin-right: 0;
+	}
+
+		article .meta > li > .fa {
+			min-width: 20px;
+			text-align: center;
+		}
+
+}
+
+.side-menu {
+	margin: 0;
+	padding: 0;
+}
+
+	.side-menu > li {
+		border-bottom: solid 1px #ccc;
+		list-style: none;
+		padding: 10px 0;
+	}
+
+.searchform-wrap {
+	margin-bottom: 30px;
+}
+
+	.searchform-wrap form {
+		overflow: hidden;
+	}
+
+	.searchform-wrap label {
+		float: left;
+		line-height: 30px;
+		margin-right: 10px;
+	}
+
+	.searchform-wrap input {
+		border-style: solid;
+		border-width: 1px;
+		height: 30px;
+		line-height: 30px;
+		float: left;
+		padding: 0 5px;
+	}
+
+		.searchform-wrap input[type="text"] {
+			border-color: #333;
+			margin-right: 10px;
+		}
+
+		.searchform-wrap input[type="submit"] {
+			background-color: crimson;
+			border-color: crimson;
+			color: white;
+			min-width: 50px;
+		}
+
+@media ( max-width: 768px ) {
+
+.searchform-wrap label {
+	display: block;
+	float: none;
+}
+
+.searchform-wrap input {
+	display: block;
+	float: none;
+}
+
+.searchform-wrap input[type="text"] {
+	margin-bottom: 10px;
+}
+
+}
+
+.pagination {
+	margin: 30px 0 0;
+	text-align: center;
+	width: 100%;
+}
+
+	.pagination h2 {
+		display: none;
+	}
+
+	.pagination > .page-numbers {
+		background-color: crimson;
+		color: white;
+		display: inline-block;
+		margin: 0 5px;
+		padding: 5px 10px;
+	}
+
+		.pagination > .page-numbers.current {
+			background-color: white;
+			color: crimson;
+		}
+
+@media ( max-width: 768px ) {
+
+.pagination {
+	margin-bottom: 30px;
+}
+
+}
+
+#sidebar {
+	background-color: #333;
+	border: solid 1px black;
+	border-top: solid 2px crimson;
+	color: white;
+}
+
+	#sidebar > ul {
+		border-bottom: solid 1px black;
+		margin: 0;
+		padding: 30px 30px 0;
+	}
+
+		#sidebar > ul > li {
+			list-style: none;
+			margin-bottom: 30px;
+		}
+
+			#sidebar > ul > li > ul {
+				margin: 0;
+				padding: 0;
+			}
+
+				#sidebar > ul > li > ul > li {
+					list-style: none;
+				}
+
+	#sidebar h2 {
+		font-size: 20px;
+	}
+
+	#sidebar label {
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	#sidebar input {
+		border: none;
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		width: 100%;
+	}
+
+		#sidebar input[type="text"] {
+			color: black;
+			padding: 0 5px;
+		}
+
+		#sidebar input[type="submit"] {
+			background-color: crimson;
+			margin-top: 10px;
+		}
+
+/* Footer styles
+------------------------------------------------------------------ */
+
+#footer {
+	background-color: #333;
+	color: white;
+	padding: 30px 0;
+}
+
+	#footer a {
+		color: crimson;
+	}
+
+	#footer .top {
+		margin-bottom: 30px;
+	}
+
+	#footer .bottom {
+		color: #777;
+		font-size: 12px;
+		text-align: center;
+	}
+
+		#footer .bottom p {
+			border-top: solid 1px #222;
+			margin-bottom: 0;
+			padding-top: 20px;
+		}
+
+	#footer .social {
+		margin: 0;
+		padding: 0;
+	}
+
+		#footer .social > li {
+			list-style: none;
+			margin-bottom: 5px;
+		}
+
+			#footer .social > li > .fa {
+				margin-right: 5px;
+				min-width: 20px;
+				text-align: center;
+			}
+
+@media ( max-width: 768px ) {
+
+#footer h4 {
+	margin-top: 20px;
+}
+
+}
