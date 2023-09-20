@@ -23,16 +23,7 @@ get_header();
     endif;
     ?>
 </section>
-<article class="sidebar_container">
-    <?php if (is_active_sidebar('sidebar-widget-area')) : ?>
-        <!-- <div id="sidebar">
-            <?php dynamic_sidebar('sidebar-widget-area'); ?>
-        </div> -->
-        <!-- <?php endif; ?> -->
-</article>
-<div class="container">
-    bcscale
-</div>
+
 <?php
 
 

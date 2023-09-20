@@ -1,15 +1,12 @@
 <?php
 /*
-Template Name: Anpassad sidmall
-*/
-?>
+Template Name: Citat-sida
+*/ ?>
 <?php
 get_header();
-1
-
-
-
 ?>
+
+
 <section class="custom-wrapper">
     <section class="container ">
         <h1><?php the_title(); ?></h1>
@@ -19,10 +16,9 @@ get_header();
 
         ?>
                 <section section="container__content">
-                    <p>hej</p>
+
                     <?php the_content(); ?>
                 </section>
-                <p><?php echo post_type_archive_title(); ?></p>
 
         <?php
 
@@ -38,7 +34,6 @@ get_header();
 
     </div>
 </section>
+
 <?php
-
-
-get_footer(); ?>
+get_footer();
