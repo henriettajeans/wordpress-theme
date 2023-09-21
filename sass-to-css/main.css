@@ -123,3 +123,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.footer-wrapper {
+  background-color: rgb(232, 222, 231);
+}

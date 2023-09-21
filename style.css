@@ -90,10 +90,7 @@ align-items: center;
   justify-content: space-evenly;
 }
 
-.footer-wrapper{
-  background-color: rgb(250, 231, 215);
 
-}
 .footer-wrapper_container{
   display: flex;
   gap: 5%;
