@@ -14,7 +14,7 @@ function theme_setup()
     add_theme_support('automatic-feed-links');
 
 
-    register_nav_menus(array("primary_menu" => "Navbar", "sub_menu" => "Undermeny", "footer_menu" => "Footer"));
+    register_nav_menus(array("primary_menu" => "Navbar", "sub_menu" => "Undermeny", "orientation" => "Orientering", "footer_menu" => "Footer"));
 
     /**
      * Add post-formats support.
@@ -41,6 +41,7 @@ function theme_setup()
 		 */
     add_theme_support('post-thumbnails');
     add_theme_support('widgets');
+    // add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
 
     /*
 		 * Switch default core markup for search form, comment form, and comments
@@ -49,6 +50,7 @@ function theme_setup()
     add_theme_support(
         'html5',
         array(
+            'search-form',
             'comment-form',
             'comment-list',
             'gallery',
@@ -62,10 +64,17 @@ function theme_setup()
 
 
     // Custom background color
+    $bg_defaults = array(
+        'default-image'          => '',
+        'default-preset'         => 'default',
+        'default-size'           => 'cover',
+        'default-repeat'         => 'no-repeat',
+        'default-attachment'     => 'scroll',
+    );
     add_theme_support(
         'custom-background',
         array(
-            'default-color' => 'd1e4dd',
+            'default-color' => 'd1e4dd',  $bg_defaults
         )
     );
 
@@ -159,9 +168,9 @@ function theme_setup()
                 'after_title' => '</h2>',
             ),
             array(
-                'name' => 'Widget Area',
-                'id' => 'widget-area',
-                'description' => 'This is another widget area.',
+                'name' => 'Orientering',
+                'id' => 'orientation',
+                'description' => 'Dethär är sidomenyn för kategori, författare och arkvinsidan.',
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h2 class="widget-title">',

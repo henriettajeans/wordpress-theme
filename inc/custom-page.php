@@ -12,10 +12,8 @@ get_header();
         <?php
 
         if (have_posts()) : while (have_posts()) : the_post();
-
         ?>
                 <section section="content-container">
-                    <p>hej</p>
                     <?php the_content(); ?>
                 </section>
                 <p><?php echo post_type_archive_title(); ?></p>

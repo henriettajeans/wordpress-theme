@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-
+<!-- Styla denna sida så att inläggen och menyn ligger bredvid varandra -->
 
 <section class="category-container">
     <p>Inlägg av</p>
@@ -44,6 +44,12 @@ get_header();
     endif;
 
     ?>
+    <article>
+        <div class="custom-wrapper__sidebar container">
+            <?php get_sidebar('orientation'); ?>
+
+        </div>
+    </article>
 
 </section>
 <?php

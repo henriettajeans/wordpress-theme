@@ -70,10 +70,7 @@ get_header();
     </section>
     <article>
         <div class="custom-wrapper__sidebar container">
-            <?php
-            $menu = wp_get_nav_menu_object('sub_menu');
-            the_widget('WP_Nav_Menu_Widget', array('nav_menu' => $menu));
-            ?>
+            <?php get_sidebar('orientation'); ?>
 
         </div>
     </article>

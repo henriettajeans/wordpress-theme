@@ -1,4 +1,4 @@
-<!-- Detta ska vara bloggsidan? -->
+<!-- Styla denna sida så att inlägg och sidomeny ligger bredvid varandra likt kategori-sidan-->
 <?php
 get_header();
 ?>
@@ -47,6 +47,11 @@ get_header();
     endif;
 
     ?>
+    <article>
+        <div class="custom-wrapper__sidebar container">
+            <?php get_sidebar('orientation'); ?>
 
+        </div>
+    </article>
 </section>
 <?php get_footer();
