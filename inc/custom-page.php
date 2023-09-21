@@ -7,7 +7,7 @@ Template Name: Anpassad sidmall
 get_header();
 ?>
 <section class="custom-wrapper">
-    <section class="container ">
+    <section class="content-container">
         <h1><?php the_title(); ?></h1>
         <?php
 

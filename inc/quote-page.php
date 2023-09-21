@@ -9,7 +9,7 @@ get_header();
 
 
 <section class="custom-wrapper">
-    <section class="">
+    <section class="content-container">
         <h1><?php the_title(); ?></h1>
 
         <section class="">
@@ -32,7 +32,14 @@ get_header();
             ?>
 
         </section>
-    </section>
 
+    </section>
+    <div class="custom-wrapper__sidebar container">
+        <?php
+        $menu = wp_get_nav_menu_object('sub_menu');
+        the_widget('WP_Nav_Menu_Widget', array('nav_menu' => $menu));
+        ?>
+
+    </div>
     <?php
     get_footer();

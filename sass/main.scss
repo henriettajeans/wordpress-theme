@@ -1,5 +1,6 @@
 @import "header.scss";
 @import "post.scss";
+@import "content.scss";
 
 body{
     background-color: rgb(236, 242, 245);
@@ -53,10 +54,14 @@ a{
 
 .custom-wrapper{
     display: flex;
+    // margin: 0;
 
-    &__sidebar ul{
+    &__sidebar{
+        
+    
+    ul{
         flex-direction: column;
-
+    }
     }
 }
 .home-container{
@@ -74,4 +79,9 @@ a{
 .footer-wrapper{
     background-color: $dustypink;
   
+  }
+  .widget{
+    margin: 0;
+    width: 100%;
+    height: 100%;
   }
