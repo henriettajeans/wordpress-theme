@@ -14,7 +14,7 @@ get_header();
         if (have_posts()) : while (have_posts()) : the_post();
 
         ?>
-                <section section="container__content">
+                <section section="content-container">
                     <p>hej</p>
                     <?php the_content(); ?>
                 </section>
@@ -26,13 +26,15 @@ get_header();
         endif;
         ?>
     </section>
-    <div class="custom-wrapper__sidebar container">
-        <?php
-        $menu = wp_get_nav_menu_object('sub_menu');
-        the_widget('WP_Nav_Menu_Widget', array('nav_menu' => $menu));
-        ?>
+    <article>
+        <div class="custom-wrapper__sidebar container">
+            <?php
+            $menu = wp_get_nav_menu_object('sub_menu');
+            the_widget('WP_Nav_Menu_Widget', array('nav_menu' => $menu));
+            ?>
 
-    </div>
+        </div>
+    </article>
 </section>
 <?php
 

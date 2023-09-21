@@ -13,7 +13,6 @@ get_header();
         if (have_posts()) : while (have_posts()) : the_post();
 
         ?>
-                <div class="margin-container"></div>
                 <article class="post-container">
 
 
@@ -26,7 +25,7 @@ get_header();
                         <?php the_post_thumbnail() ?>
                     </div>
 
-                    <div class="margin-container"></div>
+                    <!-- <div class="margin-container"></div> -->
 
                     <?php
                     the_excerpt();
@@ -69,6 +68,15 @@ get_header();
         ?>
 
     </section>
+    <article>
+        <div class="custom-wrapper__sidebar container">
+            <?php
+            $menu = wp_get_nav_menu_object('sub_menu');
+            the_widget('WP_Nav_Menu_Widget', array('nav_menu' => $menu));
+            ?>
+
+        </div>
+    </article>
 </section>
 <?php
 
