@@ -51,6 +51,7 @@ get_header();
                             ?>
                         </p>
                         <p>
+                            <i class="fa-solid fa-box-archive" style="color: #1e3050;"></i>
                             <?php
                             wp_get_archives();
                             ?>
