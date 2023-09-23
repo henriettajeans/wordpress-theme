@@ -17,10 +17,8 @@ margin-left: 8%;
   height:auto;
   border: solid $dustypink;
   border-color: $pink;
-//   float:left; 
   border-width: 4px 9px 5px 8px;
   border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
-//   transform: rotate(-2deg);
     &__meta{
         display: flex;
         justify-content: space-evenly;
@@ -41,7 +39,6 @@ margin-left: 8%;
     }
     ul{
         display: flex;
-        // margin-right: 3%;
         gap: 3%;
     }
     

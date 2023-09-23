@@ -2,14 +2,19 @@
 // wp_nav_menu();
 get_header();
 
-wp_nav_menu(array("theme_location" => "sub_menu"));
 
 ?>
+<section class="custom-wrapper">
+    <section class="main-wrapper">
+        <h1>Sidan finns inte</h1>
+    </section>
+    <article class="custom-sidebar">
+        <div class="custom-wrapper__sidebar container">
+            <?php get_sidebar('orientation'); ?>
 
-<section>
-    <h2>Sidan finns inte</h2>
+        </div>
+    </article>
 </section>
 <?php
-// get_sidebar();
 
 get_footer(); ?>

@@ -307,19 +307,3 @@ function load_js()
     wp_enqueue_script('bootstrap');
 }
 add_action('wp_enqueue_scripts', 'load_js');
-
-
-// // Sidebar functionality
-// function theme_register_widget_areas()
-// {
-//     register_sidebar(array(
-//         'name' => 'Sidebar Widget Area',
-//         'id' => 'sidebar-widget-area',
-//         'description' => 'This is the sidebar widget area.',
-//         'before_widget' => '<div class="widget">',
-//         'after_widget' => '</div>',
-//         'before_title' => '<h2 class="widget-title">',
-//         'after_title' => '</h2>',
-//     ));
-// }
-// add_action('widgets_init', 'theme_register_widget_areas');

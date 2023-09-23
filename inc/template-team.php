@@ -20,7 +20,7 @@ get_header();
             endwhile;
         endif;
         ?>
-        <section class="flex-wrap content-container">
+        <section class="content-container">
 
             <?php if (have_rows('team')) : ?>
 
