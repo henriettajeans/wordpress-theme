@@ -80,10 +80,17 @@
 }
 
 .custom-field {
-  width: 30%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+}
+.custom-field div {
+  height: auto;
+  width: 70%;
+}
+.custom-field div img {
+  border-radius: 35%;
+  border: 6px dotted rgb(232, 222, 231);
 }
 
 .custom-sidebar {
@@ -134,68 +141,57 @@ body .comment-body {
 body .comment-body p {
   color: rgb(104, 169, 216);
 }
-
-.main-wrapper {
+body h1 {
+  font-family: "Didot";
+}
+body .main-wrapper {
   max-width: 100%;
   height: auto;
   display: flex;
   margin-top: 2em;
-  margin: 2em;
+  margin: 4em;
   padding: 2em;
   border: solid rgb(232, 222, 231);
   border-radius: 1em;
 }
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1em;
-  height: 100%;
-  align-items: baseline;
+body .column {
+  flex-direction: column;
 }
-
-main {
+body main {
   height: 100%;
   margin: 0;
 }
-
-input, textarea {
+body input, body textarea {
   border: solid rgb(232, 222, 231);
   border-radius: 10px;
   background-color: rgb(243, 236, 242);
 }
-
-li {
+body li {
   list-style-type: none;
   text-decoration: none;
   text-transform: none;
 }
-
-a {
+body a {
   text-decoration: none;
   text-transform: none;
-  color: pink;
+  color: rgb(220, 142, 155);
   text-shadow: 1px 1px 4px rgb(244, 238, 244);
 }
-
-.home-container {
+body .home-container {
   position: relative;
   text-align: center;
   color: white;
 }
-.home-container__text {
+body .home-container__text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.footer-wrapper {
+body .footer-wrapper {
   background-color: rgb(232, 222, 231);
 }
-
-.widget {
+body .widget {
   margin: 0;
   width: 100%;
   height: 100%;

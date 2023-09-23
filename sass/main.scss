@@ -16,11 +16,6 @@ body{
         height: auto;
         border-radius: 3%;
     }
-    // .sidebar{
-    //     display: flex;
-    //     flex-direction: column;
-    //     width: 30px;
-    // }
     .comment-body{
         padding: 1em;
         margin: 1em;
@@ -36,31 +31,23 @@ body{
                 color:rgb(104, 169, 216);
             }
           }
-          
-          
-       
-    }
-   
+ h1{
+            font-family: 'Didot';
+          }
 .main-wrapper{
     max-width: 100%;
     height: auto;
     display: flex;
     margin-top: 2em;
-    margin:2em;
+    margin:4em;
     padding: 2em;
     border: solid $dustypink;
     border-radius: 1em;
+}
+.column{
+    flex-direction: column;
+}
 
-   
-}
-.flex-wrap{
-    display: flex;
-  flex-wrap: wrap;
-    width: 100%;
-    padding:1em;
-    height: 100%;
-    align-items: baseline;
-}
 main{
     height: 100%;
     margin: 0;
@@ -78,7 +65,7 @@ li {
 a{
     text-decoration: none;
     text-transform: none;
-    color: pink;
+    color: rgb(220, 142, 155);
     text-shadow: 1px 1px 4px rgb(244, 238, 244);
 }
 
@@ -104,3 +91,4 @@ a{
     width: 100%;
     height: 100%;
   }
+}
