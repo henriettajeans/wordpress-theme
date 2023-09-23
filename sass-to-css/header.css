@@ -1,5 +1,13 @@
 .bar-wrapper {
   background-color: rgb(232, 222, 231);
+  width: 100%;
+  padding: 1em;
+  padding-left: 5.8em;
+  padding-right: 5em;
+}
+.bar-wrapper h1 {
+  color: antiquewhite;
+  font-family: "Didot";
 }
 
 .nav-wrapper {

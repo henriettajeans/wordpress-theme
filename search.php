@@ -33,7 +33,7 @@
         ));
         ?>
 
-     <article>
+     <article class="custom-sidebar">
          <div class="custom-wrapper__sidebar container">
              <?php get_sidebar('orientation'); ?>
 

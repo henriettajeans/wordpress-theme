@@ -1,6 +1,16 @@
 @import "partials/variables";
 .bar-wrapper {
     background-color: $dustypink;
+    width:100%;
+    padding: 1em;
+    padding-left: 5.8em;
+    padding-right: 5em;
+    
+    h1{
+        color: antiquewhite;
+        font-family: 'Didot';
+    }
+    
 }
 
 .nav-wrapper {

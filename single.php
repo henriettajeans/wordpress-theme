@@ -7,7 +7,7 @@ the_post();
 ?>
 <section class="post-wrapper">
 
-    <section class="container">
+    <section class="container content-container">
         <div class="post-container__img">
             <?php the_post_thumbnail() ?>
         </div>
@@ -32,9 +32,13 @@ the_post();
             the_content();
             ?>
         </article>
+        <?php comments_template(); ?>
     </section>
-    <article class="sidebar">
-        <!-- <?php dynamic_sidebar('left-sidebar'); ?> -->
+    <article class="custom-sidebar">
+        <div class="custom-wrapper__sidebar container">
+            <?php get_sidebar('orientation'); ?>
+
+        </div>
     </article>
 </section>
 <?php

@@ -1,10 +1,9 @@
 </main>
 
 </div>
-<?php wp_footer(); ?>
+
 <footer class="footer-wrapper" id="footer" role="contentinfo">
     <section class="footer-wrapper_container">
-        <!-- Repeater custom field -->
         <article class="footer-wrapper_box">
             <h4>Kort om oss</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sodales mauris. Aliquam felis est, efficitur vel fringilla quis, vehicula quis ex.</p>
@@ -35,7 +34,7 @@
 </footer>
 </div>
 <!-- wp footer tagg -->
-
+<?php wp_footer(); ?>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+.custom-sidebar{
+    width: 25%;
+}
+.custom-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    width: 90%;
+
+    &__sidebar{
+        
+    width:100%;
+    padding: 3em;
+    ul{
+        flex-direction: column;
+        p{
+            display: none;
+        }
+    }
+    }
+}

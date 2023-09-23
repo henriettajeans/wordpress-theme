@@ -16,7 +16,6 @@ get_header();
                 <section section="content-container">
                     <?php the_content(); ?>
                 </section>
-                <p><?php echo post_type_archive_title(); ?></p>
 
         <?php
 
@@ -24,7 +23,7 @@ get_header();
         endif;
         ?>
     </section>
-    <article>
+    <article class="custom-sidebar">
         <div class="custom-wrapper__sidebar container">
             <?php
             $menu = wp_get_nav_menu_object('sub_menu');
@@ -34,7 +33,6 @@ get_header();
         </div>
     </article>
 </section>
+
 <?php
-
-
 get_footer(); ?>

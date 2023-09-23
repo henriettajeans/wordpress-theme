@@ -1,6 +1,8 @@
 @import "header.scss";
 @import "post.scss";
 @import "content.scss";
+@import "sidebar.scss";
+@import "partials/variables.scss";
 
 body{
     background-color: rgb(236, 242, 245);
@@ -14,22 +16,50 @@ body{
         height: auto;
         border-radius: 3%;
     }
-    .sidebar{
-        display: flex;
-        flex-direction: column;
-        width: 30px;
+    // .sidebar{
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 30px;
+    // }
+    .comment-body{
+        padding: 1em;
+        margin: 1em;
+            margin: 2rem auto;
+            max-width: 40ch;
+            border: 4px solid $comment;
+            border-style: dotted;
+            border-radius: 1em;
+            color: #f1e4e4;
+            padding: 2ch;
+            position: relative;
+            p{
+                color:rgb(104, 169, 216);
+            }
+          }
+          
+          
+       
     }
    
-}
 .main-wrapper{
     max-width: 100%;
-    height: 100%;
-    // display: flex;
+    height: auto;
+    display: flex;
     margin-top: 2em;
     margin:2em;
     padding: 2em;
     border: solid $dustypink;
     border-radius: 1em;
+
+   
+}
+.flex-wrap{
+    display: flex;
+  flex-wrap: wrap;
+    width: 100%;
+    padding:1em;
+    height: 100%;
+    align-items: baseline;
 }
 main{
     height: 100%;
@@ -52,18 +82,7 @@ a{
     text-shadow: 1px 1px 4px rgb(244, 238, 244);
 }
 
-.custom-wrapper{
-    display: flex;
-    margin-top: 5em;
 
-    &__sidebar{
-        
-    
-    ul{
-        flex-direction: column;
-    }
-    }
-}
 .home-container{
     position: relative;
     text-align: center;

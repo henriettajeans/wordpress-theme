@@ -1,0 +1,20 @@
+.custom-sidebar {
+  width: 25%;
+}
+
+.custom-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  width: 90%;
+}
+.custom-wrapper__sidebar {
+  width: 100%;
+  padding: 3em;
+}
+.custom-wrapper__sidebar ul {
+  flex-direction: column;
+}
+.custom-wrapper__sidebar ul p {
+  display: none;
+}

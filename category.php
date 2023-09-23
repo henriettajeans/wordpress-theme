@@ -31,7 +31,7 @@ get_header();
                     the_excerpt();
                     ?>
 
-                    <article class="post-container_desc">
+                    <article class="post-container__desc">
                         <p>
                             <?php
                             the_date(); ?>
@@ -68,7 +68,7 @@ get_header();
         ?>
 
     </section>
-    <article>
+    <article class="custom-sidebar">
         <div class="custom-wrapper__sidebar container">
             <?php get_sidebar('orientation'); ?>
 

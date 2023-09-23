@@ -3,7 +3,8 @@
 .post-wrapper{
     margin: 0;
 display: flex;
-width: 70%;
+width: 80%;
+margin-left: 8%;
 }
 
 
@@ -12,11 +13,11 @@ width: 70%;
     background-color: rgb(245, 241, 236);
     margin: 2rem;
   padding: 40px;
-  width:90%;
+  width:100%;
   height:auto;
   border: solid $dustypink;
   border-color: $pink;
-  float:left; 
+//   float:left; 
   border-width: 4px 9px 5px 8px;
   border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
 //   transform: rotate(-2deg);
@@ -32,6 +33,16 @@ width: 70%;
         border-radius: 5%;
         border: solid $dustypink;
         border-width: 4px 9px 5px 8px;
+    }
+    &__desc{
+        width: 100%;
+        display: flex;
+        gap: 7px;
+    }
+    ul{
+        display: flex;
+        // margin-right: 3%;
+        gap: 3%;
     }
     
     
