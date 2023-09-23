@@ -5,6 +5,11 @@
   margin-left: 8%;
 }
 
+.post-container_desc {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .post-container {
   background-color: rgb(245, 241, 236);
   margin: 2rem;
@@ -23,10 +28,11 @@
 .post-container__img {
   display: flex;
   justify-content: center;
-  width: 70%;
-  border-radius: 5%;
-  border: solid rgb(232, 222, 231);
-  border-width: 4px 9px 5px 8px;
+  width: 95%;
+}
+.post-container__img img {
+  border: 8px dotted rgb(232, 222, 231);
+  border-radius: 10%;
 }
 .post-container__desc {
   width: 100%;
@@ -39,7 +45,7 @@
 }
 
 .container {
-  background-color: rgb(245, 241, 236);
+  background-color: rgb(245, 242, 238);
   margin: 1em;
   padding: 1em;
   width: 92%;

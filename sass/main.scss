@@ -2,10 +2,12 @@
 @import "post.scss";
 @import "content.scss";
 @import "sidebar.scss";
+@import "footer.scss";
+@import "comments.scss";
 @import "partials/variables.scss";
 
 body{
-    background-color: rgb(236, 242, 245);
+    background-color: $bg;
     height: 100%;
     width: 100vw;
     margin: 0;
@@ -16,21 +18,21 @@ body{
         height: auto;
         border-radius: 3%;
     }
-    .comment-body{
-        padding: 1em;
-        margin: 1em;
-            margin: 2rem auto;
-            max-width: 40ch;
-            border: 4px solid $comment;
-            border-style: dotted;
-            border-radius: 1em;
-            color: #f1e4e4;
-            padding: 2ch;
-            position: relative;
-            p{
-                color:rgb(104, 169, 216);
-            }
-          }
+    // .comment-body{
+    //     padding: 1em;
+    //     margin: 1em;
+    //         margin: 2rem auto;
+    //         max-width: 40ch;
+    //         border: 4px solid $comment;
+    //         border-style: dotted;
+    //         border-radius: 1em;
+    //         color: #f1e4e4;
+    //         padding: 2ch;
+    //         position: relative;
+    //         p{
+    //             color:rgb(104, 169, 216);
+    //         }
+    //       }
  h1{
             font-family: 'Didot';
           }
@@ -68,76 +70,29 @@ a{
     color: $link;
     text-shadow: 1px 1px 4px rgb(244, 238, 244);
 }
-
-
 .home-container{
     position: relative;
     text-align: center;
     color: white;
-
-    &__text{
-        position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+        &__text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
-}
 .footer-wrapper{
     padding: 4em;
     background-color: $dustypink;
-  
-  }
-  .sidebar-container{
-    border-color: aqua;
-    margin: 5px;
-    padding: 5px;
   }
   .frontpage-img{
     padding: 5%;
     width: 500px;
     height: 200px;
   }
-  
-  .nav-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .menu-navbar-container{
-    display: flex;
-    justify-content: space-evenly;
-  
-  }
-  .menu{
-    display: flex;
-    gap: 1em;
-    align-items: center;
-    
-  
-    list-style-type: none;
-    text-decoration: none;
-    text-transform: none;
-    height: 100%;
-  }
-  .bar-wrapper{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  
-  align-items: center;
-  }
-  .bar-wrapper_search{
-    justify-content: flex-end;
-  }
-  
-  .header-wrapper{
-    background: pink;
-  }
   .main-wrapper{
     background-color: rgb(244, 229, 248);
   }
-  
-  
   .main{
     display: flex;
     flex-direction: column;
@@ -150,23 +105,5 @@ a{
   .margin-container{
     height: 3.5rem;
   }
-  .post-container_desc{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  
-  .footer-wrapper_container{
-    display: flex;
-    gap: 5%;
-  }
-  .footer-wrapper_box{
-    width: 30%;
-    padding-left: 1em;
-  }
-  .footer-wrapper_container_sign{
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-  }
+ 
 }

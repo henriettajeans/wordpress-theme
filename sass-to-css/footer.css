@@ -1,0 +1,15 @@
+.footer-wrapper_container {
+  display: flex;
+  gap: 5%;
+}
+
+.footer-wrapper_box {
+  width: 30%;
+  padding-left: 1em;
+}
+
+.footer-wrapper_container_sign {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}

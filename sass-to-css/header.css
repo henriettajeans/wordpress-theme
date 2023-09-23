@@ -12,4 +12,32 @@
 
 .nav-wrapper {
   background-color: rgb(232, 222, 231);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: none;
+  height: 100%;
+}
+
+.bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.bar-wrapper_search {
+  justify-content: flex-end;
 }

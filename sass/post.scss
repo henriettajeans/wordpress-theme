@@ -8,7 +8,10 @@ margin-left: 8%;
 }
 
 
-
+ .post-container_desc{
+    display: flex;
+    justify-content: space-evenly;
+  }
 .post-container{
     background-color: rgb(245, 241, 236);
     margin: 2rem;
@@ -27,15 +30,20 @@ margin-left: 8%;
     &__img{
         display: flex;
         justify-content: center;
-        width:70%;
-        border-radius: 5%;
-        border: solid $dustypink;
-        border-width: 4px 9px 5px 8px;
+        width:95%;
+        
+        img{
+        border: 8px dotted $dustypink;
+        border-radius: 10%;
+        }
     }
     &__desc{
         width: 100%;
         display: flex;
         gap: 7px;
+            // display: flex;
+            // justify-content: space-evenly;
+          
     }
     ul{
         display: flex;
@@ -45,7 +53,7 @@ margin-left: 8%;
     
 }
 .container{
-    background-color: rgb(245, 241, 236);
+    background-color: $container_bg;
     margin:1em;
   padding: 1em;
   width:92%;
