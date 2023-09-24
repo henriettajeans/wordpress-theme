@@ -15,7 +15,7 @@ get_header();
             <?php if (have_rows('quotes')) :
                 while (have_rows('quotes')) : the_row();
             ?>
-                    <section class="container">
+                    <section class="main-wrapper" style="flex-direction:column; min-width:100%;">
                         <p>
                             <?php the_sub_field('quote'); ?>
                         </p>
