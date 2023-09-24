@@ -12,21 +12,18 @@ get_header();
         <section class="content-container">
             <h1><?php the_title(); ?></h1>
 
-            <!-- <section class="content-container"> -->
-
-            <?php if (have_rows('quotes')) : ?>
-
-                <?php while (have_rows('quote')) : the_row(); ?>
+            <?php if (have_rows('quotes')) :
+                while (have_rows('quotes')) : the_row();
+            ?>
                     <section class="container">
                         <p>
                             <?php the_sub_field('quote'); ?>
                         </p>
-                        <p>
+                        <h4>
                             <?php the_sub_field('author') ?>
-                        </p>
+                        </h4>
                     </section>
             <?php
-
                 endwhile;
             endif;
             ?>

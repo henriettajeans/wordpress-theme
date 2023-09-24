@@ -10,12 +10,17 @@ get_header();
     <section class="custom-wrapper">
         <section class="content-container">
             <h1><?php the_title(); ?></h1>
-            <?php
-            if (have_posts()) : while (have_posts()) : the_post();
+            <?php if (have_posts()) :
+                while (have_posts()) : the_post();
             ?>
-                    <section section="container__content ">
-                        <?php the_content(); ?>
-                    </section>
+                    <article class="content-container">
+                        <section class="custom-wrapper">
+                            <?php the_content(); ?>
+                        </section>
+                        <div id="img-container">
+                            <?php the_post_thumbnail() ?>
+                        </div>
+                    </article>
             <?php
                 endwhile;
             endif;
