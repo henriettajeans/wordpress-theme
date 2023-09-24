@@ -6,8 +6,6 @@ display: flex;
 width: 80%;
 margin-left: 8%;
 }
-
-
  .post-container_desc{
     display: flex;
     justify-content: space-evenly;
@@ -41,16 +39,11 @@ margin-left: 8%;
         width: 100%;
         display: flex;
         gap: 7px;
-            // display: flex;
-            // justify-content: space-evenly;
-          
     }
     ul{
         display: flex;
         gap: 3%;
     }
-    
-    
 }
 .container{
     background-color: $container_bg;

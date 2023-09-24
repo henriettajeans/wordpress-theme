@@ -12,11 +12,3 @@
   display: flex;
   flex-direction: row;
 }
-.custom-field div {
-  height: auto;
-  width: 70%;
-}
-.custom-field div img {
-  border-radius: 35%;
-  border: 6px dotted rgb(232, 222, 231);
-}

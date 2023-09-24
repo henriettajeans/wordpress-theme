@@ -4,6 +4,13 @@
   padding: 1em;
   padding-left: 5.8em;
   padding-right: 5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.bar-wrapper_search {
+  justify-content: flex-end;
 }
 .bar-wrapper h1 {
   color: antiquewhite;
@@ -29,17 +36,6 @@
   text-decoration: none;
   text-transform: none;
   height: 100%;
-}
-
-.bar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-.bar-wrapper_search {
-  justify-content: flex-end;
 }
 
 .post-wrapper {
@@ -118,14 +114,6 @@
   display: flex;
   flex-direction: row;
 }
-.custom-field div {
-  height: auto;
-  width: 70%;
-}
-.custom-field div img {
-  border-radius: 35%;
-  border: 6px dotted rgb(232, 222, 231);
-}
 
 .custom-sidebar {
   width: 25%;
@@ -135,7 +123,7 @@
   display: flex;
   justify-content: center;
   margin-top: 5em;
-  width: 90%;
+  width: 95%;
 }
 .custom-wrapper__sidebar {
   width: 100%;
@@ -205,61 +193,76 @@ body .main-wrapper {
   border: solid rgb(232, 222, 231);
   border-radius: 1em;
 }
-body .column {
+body .main-wrapper div {
+  max-width: 40%;
+}
+
+.column {
   flex-direction: column;
 }
-body main {
+
+main {
   height: 100%;
   margin: 0;
 }
-body input, body textarea {
+
+input, textarea {
   border: solid rgb(232, 222, 231);
   border-radius: 10px;
   background-color: rgb(243, 236, 242);
 }
-body li {
+
+li {
   list-style-type: none;
   text-decoration: none;
   text-transform: none;
 }
-body a {
+
+a {
   text-decoration: none;
   text-transform: none;
   color: rgb(220, 142, 178);
   text-shadow: 1px 1px 4px rgb(244, 238, 244);
 }
-body .home-container {
+
+.home-container {
   position: relative;
   text-align: center;
   color: white;
 }
-body .home-container__text {
+.home-container__text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body .footer-wrapper {
+
+.footer-wrapper {
   padding: 4em;
   background-color: rgb(232, 222, 231);
 }
-body .frontpage-img {
+
+.frontpage-img {
   padding: 5%;
   width: 500px;
   height: 200px;
 }
-body .main-wrapper {
+
+.main-wrapper {
   background-color: rgb(244, 229, 248);
 }
-body .main {
+
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body #container {
+
+#container {
   display: flex;
   justify-content: center;
 }
-body .margin-container {
+
+.margin-container {
   height: 3.5rem;
 }

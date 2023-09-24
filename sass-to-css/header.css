@@ -4,6 +4,13 @@
   padding: 1em;
   padding-left: 5.8em;
   padding-right: 5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.bar-wrapper_search {
+  justify-content: flex-end;
 }
 .bar-wrapper h1 {
   color: antiquewhite;
@@ -29,15 +36,4 @@
   text-decoration: none;
   text-transform: none;
   height: 100%;
-}
-
-.bar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-.bar-wrapper_search {
-  justify-content: flex-end;
 }

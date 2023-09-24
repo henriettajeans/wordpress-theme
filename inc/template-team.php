@@ -14,12 +14,12 @@ get_header();
                 while (have_posts()) : the_post();
             ?>
                     <article class="content-container">
-                        <section class="custom-wrapper">
-                            <?php the_content(); ?>
-                        </section>
                         <div id="img-container">
                             <?php the_post_thumbnail() ?>
                         </div>
+                        <section class="custom-wrapper">
+                            <?php the_content(); ?>
+                        </section>
                     </article>
             <?php
                 endwhile;
@@ -56,7 +56,6 @@ get_header();
                     </div>
                 </section>
         <?php
-
             endwhile;
         endif;
         ?>

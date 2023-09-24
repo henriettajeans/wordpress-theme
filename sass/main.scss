@@ -31,7 +31,11 @@ body{
     padding: 2em;
     border: solid $dustypink;
     border-radius: 1em;
-}
+   div{
+    max-width:40%;
+      }
+      }
+  }
 .column{
     flex-direction: column;
 }
@@ -91,5 +95,3 @@ a{
   .margin-container{
     height: 3.5rem;
   }
- 
-}
